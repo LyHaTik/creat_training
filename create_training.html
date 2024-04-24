@@ -18,6 +18,14 @@
 			<input type="text" name="location" id="id_location">
 		<label for="photo">Фото:</label>
 			<input type="image" name="photo" id="id_photo">
+		<label for="type_traning">Тренировка/Игра</label>
+			<input type="text" name="type_traning" id="id_type_traning">
+		<label for="limit_number_players">Кол-во игроков</label>
+			<input type="number" name="limit_number_players" id="id_limit_number_players">
+		<label for="comment">Комментарий</label>
+			<input type="text" name="comment" id="id_comment">
+		<label for="level">Уровень</label>
+			<input type="text" name="level" id="id_level">
 		<button id="create_training">Создать</button>
 	<script src="https://telegram.org/js/telegram-web-app.js"></script>
 	<script>
@@ -29,10 +37,18 @@
 			let date_traning = document.getElementById("id_date_traning").value;
 			let location = document.getElementById("id_location").value;
 			let photo = document.getElementById("id_photo").value;
+			let type_traning = document.getElementById("id_type_traning").value;
+			let limit_number_players = document.getElementById("id_limit_number_players").value;
+			let comment = document.getElementById("id_comment").value;
+			let level = document.getElementById("id_level").value;
 			let data = {
 				date_traning: date_traning,
 				location: location,
-				photo: photo
+				photo: photo,
+				type_traning: type_traning,
+				limit_number_players: limit_number_players,
+				comment: comment,
+				level: level
 			}
 				
 			tg.sendData(JSON.stringify(data));
