@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<script src="https://telegram.org/js/telegram-web-app.js"></script>
 	<meta charset="UTF-8">
 	<meta name="viewport" 
 	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -9,20 +8,24 @@
 	<title>Training</title>
 </head>
 <body>
-	<div class="container">
-		<div class="inner">
-        		<form method="post" action="/url/}">
-				<p><label for="date_traning">Дата:</label>
-					<input type="date" name="date_traning" id="id_date_traning"></p>
-				<p><label for="location">Место:</label>
-					<input type="text" name="location" id="id_location"></p>
-				<p><label for="photo">Фото:</label>
-					<input type="image" name="photo" id="id_photo"></p>
-          		<input type="submit" value="Создать">
-        		</form>
-		</div>
+	<div id="main">
+		<h1>Запускаем тренировку</h1>
+		<label for="date_traning">Дата:</label>
+			<input type="date" name="date_traning" id="id_date_traning">
+		<label for="location">Место:</label>
+			<input type="text" name="location" id="id_location">
+		<label for="photo">Фото:</label>
+			<input type="image" name="photo" id="id_photo">
+          	<button id="create_training">Создать</button>
 	</div>
-
 	<script src="https://telegram.org/js/telegram-web-app.js"></script>
+	<script>
+		let tg = window.Telegram.WebApp;
+		let create_training = document.getElementById("create_training");
+
+		create_training.addEventListener("click", () => {
+			tg.close()
+		});
+	</script>
 </body>
 </html>
