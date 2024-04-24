@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" 
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Training</title>
+</head>
+<body>
+	<div id="main">
+		<h1>Создаем ирока</h1>
+	</div>
+	<form id="form">
+		<label for="gaming_role">Амплуа</label>
+			<input type="text" name="gaming_role" id="id_gaming_role">
+		<label for="gender">М/Ж</label>
+			<input type="text" name="gender" id="id_gender">
+		<label for="photo">Фото:</label>
+			<input type="image" name="photo" id="id_photo">
+		<label for="age">Возрост</label>
+			<input type="number" name="age" id="id_age">
+		<label for="height">Рост.см</label>
+			<input type="number" name="height" id="id_height">
+		<label for="weight">Вес.kг</label>
+			<input type="number" name="weight" id="id_weight">
+		<label for="jump">Прыжок.см</label>
+			<input type="number" name="jump" id="id_jump">
+		<button id="create_training">Создать</button>
+	<script src="https://telegram.org/js/telegram-web-app.js"></script>
+	<script>
+		let tg = window.Telegram.WebApp;
+		let create_training = document.getElementById("create_training");
+		tg.expand();
+
+		create_training.addEventListener("click", () => {
+			let gaming_role = document.getElementById("id_gaming_role").value;
+			let gender = document.getElementById("id_gender").value;
+			let photo = document.getElementById("id_photo").value;
+			let age = document.getElementById("id_age").value;
+			let height = document.getElementById("id_height").value;
+			let weight = document.getElementById("id_weight").value;
+			let jump = document.getElementById("id_jump").value;
+			let data = {
+				gaming_role: gaming_role,
+				gender: gender,
+				photo: photo,
+				age: age,
+				height: height,
+				weight: weight,
+				jump: jump
+			}
+				
+			tg.sendData(JSON.stringify(data));
+			tg.close()
+		});
+	</script>
+</body>
+</html>
