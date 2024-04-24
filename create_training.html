@@ -11,10 +11,10 @@
 <body>
 	<div class="container">
 		<div class="inner">
-        		<form method="post" action="{% url 'new_training' %}">
-          		{% csrf_token %}
-          		{{ form.as_p }}
-          		<input type="submit" value="Отправить">
+        		<form method="post" action="/url/}">
+				<label for="date_traning">Дата:</label>
+				<input type="date" name="date_traning">
+          		<input type="submit" value="Создать">
         		</form>
 		</div>
 	</div>
