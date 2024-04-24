@@ -29,6 +29,13 @@
 			let date_traning = document.getElementById("id_date_traning").value;
 			let location = document.getElementById("id_location").value;
 			let photo = document.getElementById("id_photo").value;
+			let data = {
+				date_traning: date_traning,
+				location: location,
+				photo: photo
+			}
+				
+			tg.sendData(JSON.stringify(data));
 			tg.close()
 		});
 	</script>
