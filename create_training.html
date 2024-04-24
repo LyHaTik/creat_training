@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+<head>
+	<script src="https://telegram.org/js/telegram-web-app.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{% static 'create_gamer/style.css' %}">
+	<title>Document</title>
+</head>
+<body>
+	<div class="container">
+		<div class="inner">
+			<body>
+        <form method="post" action="{% url 'new_training' %}">
+          {% csrf_token %}
+          {{ form.as_p }}
+          <input type="submit" value="Отправить">
+        </form> 
+      </body>
+		</div>
+	</div>
+	<div class="usercard" id="usercard">
+		
+	</div>
+
+	<script src="https://telegram.org/js/telegram-web-app.js"></script>
+	<script src="{% static 'js/app.js' %}"></script>
+</body>
+</html>
