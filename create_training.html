@@ -18,12 +18,20 @@
 			<input type="image" name="photo" id="id_photo">
           	<button id="create_training">Создать</button>
 	</div>
+	<form id="form">
+		<input type="date" placeholder="Дата" id="date_traning">
+		<input type="text" placeholder="Место" id="location">
+		<input type="image" placeholder="Фото" id="photo">
+		<button id="create_training">Создать</button>
 	<script src="https://telegram.org/js/telegram-web-app.js"></script>
 	<script>
 		let tg = window.Telegram.WebApp;
 		let create_training = document.getElementById("create_training");
+		tg.expand();
 
 		create_training.addEventListener("click", () => {
+			let name = document.getElementById("user_name").value;
+				
 			tg.close()
 		});
 	</script>
