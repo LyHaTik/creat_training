@@ -30,6 +30,7 @@ body {
   
 .item {
     text-align: center;
+    text_color: var(--tg-theme-text-color);
     }
   
 .btn {
