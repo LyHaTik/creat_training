@@ -11,7 +11,6 @@ create_training.addEventListener("click", () => {
 	let data = {
 		date_traning: date_traning,
 		location: location,
-		photo: photo,
 		type_traning: type_traning,
 		limit_number_players: limit_number_players,
 		comment: comment,
