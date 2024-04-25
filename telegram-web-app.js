@@ -18,5 +18,6 @@ create_training.addEventListener("click", () => {
 		comment: comment,
 		level: level
 		}
+	});
 tg.sendData(JSON.stringify(data));
 tg.close()
