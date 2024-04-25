@@ -11,6 +11,8 @@
 	<div id="main">
 		<h1>Запускаем тренировку</h1>
 	</div>
+	<script src="https://telegram.org/js/telegram-web-app.js"></script>
+	<script src="telegram-web-app.js"></script>
 		<ul>
 			<li><label for="date_traning">Дата:</label>
 				<input type="date" name="date_traning" id="id_date_traning"></li>
@@ -28,8 +30,6 @@
 				<input type="text" name="level" id="id_level"></li>
 			<button id="create_training">Start</button>
 		</ul>
-	<script src="https://telegram.org/js/telegram-web-app.js"></script>
-	<script src="telegram-web-app.js"></script>
 	<script>
 		let tg = window.Telegram.WebApp;
 		let create_training = document.getElementById("create_training");
