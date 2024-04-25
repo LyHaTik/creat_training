@@ -1,37 +1,25 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-size: 18px;
-  color: var(--tg-theme-text-color);
-  background: var(--tg-theme-bg-color);
-}
+let tg = window.Telegram.WebApp;
+		let create_training = document.getElementById("create_training");
+		tg.expand();
 
-.container {
-  max-width: 390px;
-}
-
-.inner {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 200px 200px 200px;
-}
-
-.img {
-  width: 150px;
-}
-
-.item {
-  text-align: center;
-}
-
-.btn {
-  display: inline-blok;
-  padding: 10px 20px;
-  border: None;
-  background: RGB(248, 168,24);
-  border-radius: 10px;
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-  
+		create_training.addEventListener("click", () => {
+			let date_traning = document.getElementById("id_date_traning").value;
+			let location = document.getElementById("id_location").value;
+			let photo = document.getElementById("id_photo").value;
+			let type_traning = document.getElementById("id_type_traning").value;
+			let limit_number_players = document.getElementById("id_limit_number_players").value;
+			let comment = document.getElementById("id_comment").value;
+			let level = document.getElementById("id_level").value;
+			let data = {
+				date_traning: date_traning,
+				location: location,
+				photo: photo,
+				type_traning: type_traning,
+				limit_number_players: limit_number_players,
+				comment: comment,
+				level: level
+			}
+				
+			tg.sendData(JSON.stringify(data));
+			tg.close()
+		});
