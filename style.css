@@ -5,12 +5,7 @@ body {
     color: var(--tg-theme-text-color);
     background-color: var(--tg-theme-bg-color);
     }
-  
-.container {
-    max-width: 500px;
-    text: var(--tg-theme-text-color);
-    }
-  
+
 .inner {
     display: grid;
     grid-template-columns: 1fr;
