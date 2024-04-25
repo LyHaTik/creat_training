@@ -30,7 +30,7 @@ body {
     border: None;
     background: RGB(248, 168,24);
     border-radius: 10px;
-    color: #fff;
+    color: var(--tg-theme-button-color);
     text-transform: uppercase;
     font-weight: 700;
   }
