@@ -8,7 +8,7 @@ body {
   
 .container {
     max-width: 300px;
-    text_color: var(--tg-theme-text-color);
+    textr: var(--tg-theme-text-color);
     }
   
 .inner {
