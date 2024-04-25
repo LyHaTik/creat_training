@@ -1,11 +1,3 @@
-viewport = {
-    viewportHeight: var(--tg-viewport-height);
-    }
-
-theme {
-    colorScheme: var(--tg-color-scheme);
-    }
-
 body {
     margin: 0;
     padding: 0;
