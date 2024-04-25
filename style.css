@@ -36,5 +36,6 @@ body {
     button_color: var(--tg-theme-button-color);
     text-transform: uppercase;
     font-weight: 700;
+    text-align: center;
     }
     
