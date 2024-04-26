@@ -17,7 +17,7 @@ body {
     }
   
 .item {
-    text-align: center;
+    text-align: right;
     color: var(--tg-theme-text-color);
     }
   
