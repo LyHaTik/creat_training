@@ -1,5 +1,5 @@
 body {
-    background-image: url('5WWU.gif');
+    background-image: <p width="120px" height="120px">url('5WWU.gif')</p>;
     background-size: 100%;
     background-repeat: repeat-y;
     background-attachment: fixed;
