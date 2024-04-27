@@ -22,7 +22,7 @@ create_gamer.addEventListener("click", () => {
 		photo: photo,
 		location: location,
 		contact: contact,
-		jump: jump
+		level: level
 		}
 		tg.sendData(JSON.stringify(data));
 		tg.close()
