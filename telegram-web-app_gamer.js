@@ -1,20 +1,28 @@
 let tg = window.Telegram.WebApp;
-let create_training = document.getElementById("create_training");
+let create_gamer = document.getElementById("create_gamer");
 tg.expand();
-create_training.addEventListener("click", () => {
-	let date_traning = document.getElementById("id_date_traning").value;
+create_gamer.addEventListener("click", () => {
+	let gaming_role = document.getElementById("id_gaming_role").value;
+	let gender = document.getElementById("id_gender").value;
+	let age = document.getElementById("id_age").value;
+	let height = document.getElementById("id_height").value;
+	let weight = document.getElementById("id_weight").value;
+	let jump = document.getElementById("id_jump").value;
+	let photo = document.getElementById("id_photo").value;
 	let location = document.getElementById("id_location").value;
-	let type_traning = document.getElementById("id_type_traning").value;
-	let limit_number_players = document.getElementById("id_limit_number_players").value;
-	let comment = document.getElementById("id_comment").value;
+	let contact = document.getElementById("id_contact").value;
 	let level = document.getElementById("id_level").value;
 	let data = {
-		date_traning: date_traning,
+		gaming_role: gaming_role,
+		gender: gender,
+		age: age,
+		height: height,
+		weight: weight,
+		jump: jump,
+		photo: photo,
 		location: location,
-		type_traning: type_traning,
-		limit_number_players: limit_number_players,
-		comment: comment,
-		level: level
+		contact: contact,
+		jump: jump
 		}
 		tg.sendData(JSON.stringify(data));
 		tg.close()
