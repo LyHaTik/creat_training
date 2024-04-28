@@ -11,24 +11,26 @@
 		<div class="inner">
 			<ul><label for="date_traning">Дата:</label>
 				<input type="date" name="date_traning" id="id_date_traning"></ul>
-			<ul><label for="location">Место:</label>
-				<input type="text" name="location" id="id_location"></ul>
 			<ul><label for="type_traning">Тренировка/Игра:</label>
-				<input type="text" name="type_traning" id="id_type_traning"></ul>
-			<ul><label for="limit_number_players">Кол-во игроков:</label>
-				<input type="number" name="limit_number_players" id="id_limit_number_players"></ul>
-			<ul><label for="comment">Комментарий:</label>
-				<input type="text" name="comment" id="id_comment"></ul>
-			<ul><label for="level">Уровень:</label>
-				<input type="text" name="level" id="id_level"></ul>
-			<ul><label for="level">Уровень:</label>
 				<select>
-					<option value="beginner">beginner</option>
-					<option selected_value="average">average</option>
-					<option value="above average">above average</option>
-					<option value="high level">high level</option>
+					<option value="game">Игра</option>
+					<option value="training">Тренировка</option>
 				</select>
 			</ul>
+			<ul><label for="level">Уровень:</label>
+				<select>
+					<option value="beginner">Начинающий</option>
+					<option value="average">Средний</option>
+					<option value="above average">Выше среднего</option>
+					<option value="high level">Профи</option>
+				</select>
+			</ul>
+			<ul><label for="limit_number_players">Кол-во игроков:</label>
+				<input type="number" name="limit_number_players" id="id_limit_number_players"></ul>
+			<ul><label for="location">Место:</label>
+				<input type="text" name="location" id="id_location"></ul>
+			<ul><label for="comment">Комментарий:</label>
+				<input type="text" name="comment" id="id_comment"></ul>
 		</div>
 		<ul><img src="")>
 			<button id="create_training" class="btn">Start</button></ul>
