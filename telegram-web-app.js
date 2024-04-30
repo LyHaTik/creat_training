@@ -1,20 +1,20 @@
 let tg = window.Telegram.WebApp;
-let create_training = document.getElementById("create_training");
+let create_tr = document.getElementById("create_tr");
 tg.expand();
-create_training.addEventListener("click", () => {
-	let date_training = document.getElementById("id_date_training").value;
-	let time_training = document.getElementById("id_time_training").value;
+create_tr.addEventListener("click", () => {
+	let date_tr = document.getElementById("id_date_tr").value;
+	let time_tr = document.getElementById("id_time_tr").value;
 	let location = document.getElementById("id_location").value;	
-	let type_traning = document.getElementById("id_type_traning").value;
-	let limit_number_players = document.getElementById("id_limit_number_players").value;
+	let type_tr = document.getElementById("id_type_tr").value;
+	let count_gamer = document.getElementById("id_count_gamer").value;
 	let comment = document.getElementById("id_comment").value;
 	let level = document.getElementById("id_level").value;
 	let data = {
-		date_training: date_training,
-		time_training: time_training,
+		date_tr: date_tr,
+		time_tr: time_tr,
 		location: location,
-		type_traning: type_traning,
-		limit_number_players: limit_number_players,
+		type_tr: type_tr,
+		count_gamer: count_gamer,
 		comment: comment,
 		level: level
 		}
