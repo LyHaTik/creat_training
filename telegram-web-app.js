@@ -3,6 +3,8 @@ let create_training = document.getElementById("create_training");
 tg.expand();
 create_training.addEventListener("click", () => {
 	let date_traning = document.getElementById("id_date_traning").value;
+	let time_traning = document.getElementById("id_time_traning").value;
+	let hidden_survey = document.getElementById("id_hidden_survey").value;
 	let location = document.getElementById("id_location").value;
 	let type_traning = document.getElementById("id_type_traning").value;
 	let limit_number_players = document.getElementById("id_limit_number_players").value;
