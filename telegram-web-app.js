@@ -12,6 +12,8 @@ create_training.addEventListener("click", () => {
 	let level = document.getElementById("id_level").value;
 	let data = {
 		date_traning: date_traning,
+		time_traning: time_traning,
+		hidden_survey: hidden_survey,
 		location: location,
 		type_traning: type_traning,
 		limit_number_players: limit_number_players,
