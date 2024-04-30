@@ -9,25 +9,32 @@
 <body>
 	<h2>Создаем юнита</h2>
 		<div class="inner">
-			<ul><label for="gaming_role">Роль:</label>
-				<input type="text" name="gaming_role" id="id_gaming_role"></ul>
-			<ul><label for="gender">м/ж:</label>
-				<input type="text" name="gender" id="id_gender"></ul>
-			<ul><label for="age">Полных лет:</label>
-				<input type="number" name="age" id="id_age"></ul>
-			<ul><label for="height">Рост(см):</label>
-				<input type="number" name="height" id="id_height"></ul>
-			<ul><label for="weight">Вес(кг):</label>
-				<input type="number" name="weight" id="id_weight"></ul>
-			<ul><label for="jump">Прыжок(см):</label>
-				<input type="number" name="jump" id="id_jump"></ul>
-			<ul><label for="location">Р-н проживания:</label>
-				<input type="text" name="location" id="id_location"></ul>
-			<ul><label for="contact">Телефон:</label>
-				<input type="text" name="contact" id="id_contact"></ul>
+			<ul><label for="date_training">Дата:</label>
+				<input type="date" name="date_training" id="id_date_training"></input></ul>
+			<ul><label for="time_training">Время:</label>
+				<input type="time" name="time_training" id="id_time_training" value="18:00"></input></ul>
+			<ul><label for="hidden_survey">Скрытая</label>
+				<input type="checkbox" name="hidden_survey" id="id_hidden_survey"></input></ul>
+			<ul><label for="type_training">Тип:</label>
+				<select name="type_training>
+					<option value="game">Игра</option>
+					<option value="training">Тренировка</option>
+				</select>
+			</ul>
 			<ul><label for="level">Уровень:</label>
-				<input type="text" name="level" id="id_level"></ul>
-			
+				<select name="level">
+					<option value="beginner">Начинающий</option>
+					<option value="average">Средний</option>
+					<option value="above average">Выше среднего</option>
+					<option value="high level">Профи</option>
+				</select>
+			</ul>
+			<ul><label for="limit_number_players">Кол-во игроков:</label>
+				<input type="number" name="limit_number_players" id="id_limit_number_players" value=12></input></ul>
+			<ul><label for="location">Место:</label>
+				<input type="text" name="location" id="id_location" value="PSU"></input></ul>
+			<ul><label for="comment">Комментарий:</label>
+				<input type="text" name="comment" id="id_comment" value="Бою быть, быть бою!"></input></ul>
 		</div>
 		<ul><img src="")>
 			<button id="create_gamer" class="btn">Start</button></ul>
