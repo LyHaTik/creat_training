@@ -2,8 +2,8 @@ let tg = window.Telegram.WebApp;
 let create_training = document.getElementById("create_training");
 tg.expand();
 create_training.addEventListener("click", () => {
-	let date_traning = document.getElementById("id_date_traning").value;
-	let time_traning = document.getElementById("id_time_traning").value;
+	let date_training = document.getElementById("id_date_training").value;
+	let time_training = document.getElementById("id_time_training").value;
 	let hidden_survey = document.getElementById("id_hidden_survey").value;
 	let location = document.getElementById("id_location").value;	
 	let type_traning = document.getElementById("id_type_traning").value;
@@ -11,8 +11,8 @@ create_training.addEventListener("click", () => {
 	let comment = document.getElementById("id_comment").value;
 	let level = document.getElementById("id_level").value;
 	let data = {
-		date_traning: date_traning,
-		time_traning: time_traning,
+		date_training: date_training,
+		time_training: time_training,
 		hidden_survey: hidden_survey,
 		location: location,
 		type_traning: type_traning,
