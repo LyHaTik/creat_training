@@ -4,7 +4,8 @@ tg.expand();
 create_tr.addEventListener("click", () => {
 	let date_tr = document.getElementById("id_date_tr").value;
 	let time_tr = document.getElementById("id_time_tr").value;
-	let location = document.getElementById("id_location").value;	
+	let location = document.getElementById("id_location").value;
+	let hidden_survey = document.getElementById("id_hidden_survey").value;
 	let type_tr = document.getElementById("id_type_tr").value;
 	let count_gamer = document.getElementById("id_count_gamer").value;
 	let comment = document.getElementById("id_comment").value;
@@ -13,6 +14,7 @@ create_tr.addEventListener("click", () => {
 		date_tr: date_tr,
 		time_tr: time_tr,
 		location: location,
+		hidden_survey: hidden_survey,
 		type_tr: type_tr,
 		count_gamer: count_gamer,
 		comment: comment,
