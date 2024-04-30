@@ -10,7 +10,7 @@
 	<h2>Создаем юнита</h2>
 		<div class="inner">
 			<ul><label for="photo">Фото:</label>
-				<input type="file" name="photo" id="id_photo"></ul>
+				<input type="file" name="photo" id="id_photo">
 				<button onclick="save()" class="btn>Save</button>
 				<img id="image1" width="100px" height="100px" />
 				<script>
@@ -23,6 +23,7 @@
     					}
     					image1.src = localStorage.getItem('myImage')
 				</script>
+			</ul>
 			<ul><label for="gaming_role">Роль:</label>
 				<input type="text" name="gaming_role" id="id_gaming_role"></ul>
 			<ul><label for="gender">м/ж:</label>
