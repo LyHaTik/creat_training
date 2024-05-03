@@ -5,7 +5,7 @@ create_tr.addEventListener("click", () => {
 	let date_tr = document.getElementById("id_date_tr").value;
 	let time_tr = document.getElementById("id_time_tr").value;
 	let location = document.getElementById("id_location").value;
-	let hidden_survey = document.querySelector('id_hidden_survey');
+	let hidden_survey = document.getElementById('id_hidden_survey');
 	let type_tr = document.getElementById("id_type_tr").value;
 	let count_gamer = document.getElementById("id_count_gamer").value;
 	let comment = document.getElementById("id_comment").value;
@@ -27,7 +27,7 @@ create_tr.addEventListener("click", () => {
 var c = document.querySelector('#id_hidden_survey');
 c.onclick = function() {
  if (c.checked) {
-  alert( 'Скрытая тренировка: опрос тренировки в личку' );
+  alert( '🥷 Скрытая тренировка: опрос тренировки в личку' );
  } else {
   alert( 'Открытая тренировка: опрос тренировки в личку и группу' );
  }
