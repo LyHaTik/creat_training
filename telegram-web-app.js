@@ -24,7 +24,7 @@ create_tr.addEventListener("click", () => {
 		tg.close()
 	});
 
-var c = document.querySelector('#shest0');
+var c = document.querySelector('#id_hidden_survey');
 c.onclick = function() {
  if (c.checked) {
   alert( 'чекбокс включён' );
