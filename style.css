@@ -12,6 +12,8 @@ body {
 .inner {
     display: grid;
     grid-template-columns: 1fr;
+    border: None;
+    border-radius: 10px;
     grid-template-rows: 50px 50px 50px 50px 50px 50px;
     }
   
