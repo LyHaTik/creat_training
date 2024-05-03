@@ -27,8 +27,8 @@ create_tr.addEventListener("click", () => {
 var c = document.querySelector('#id_hidden_survey');
 c.onclick = function() {
  if (c.checked) {
-  alert( 'чекбокс включён' );
+  alert( 'опрос тренировки в личку' );
  } else {
-  alert( 'чекбокс выключён' );
+  alert( 'опрос тренировки в личку и группу' );
  }
 }
