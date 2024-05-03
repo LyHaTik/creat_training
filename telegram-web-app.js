@@ -27,8 +27,8 @@ create_tr.addEventListener("click", () => {
 var c = document.querySelector('#id_hidden_survey');
 c.onclick = function() {
  if (c.checked) {
-  alert( 'опрос тренировки в личку' );
+  alert( 'Скрытая тренировка включена: опрос тренировки в личку' );
  } else {
-  alert( 'опрос тренировки в личку и группу' );
+  alert( 'Открытая тренировка: опрос тренировки в личку и группу' );
  }
 }
