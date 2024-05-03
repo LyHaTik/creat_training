@@ -1,7 +1,7 @@
 body {
     background-image: url('giphy (1).gif');
     background-size: 100%;
-    background-repeat: no-repeat;
+    background-repeat: round;
     background-attachment: fixed;
     height:100%;
     width:100%;
