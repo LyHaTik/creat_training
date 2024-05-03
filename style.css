@@ -36,7 +36,7 @@ body {
     }
 
 #id_hidden_survey
-[for="payt"] {
+[for="id_hidden_survey"] {
     position: relative;
     display: inline-block;
     width: 120px;
