@@ -35,7 +35,7 @@ body {
     text-align: center;
     }
 
-#id_hidden_survey
+#id_hidden_survey {display: none;}
 [for="id_hidden_survey"] {
     position: relative;
     display: inline-block;
