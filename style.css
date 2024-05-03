@@ -25,13 +25,13 @@ body {
   
 .btn {
     display: inline-blok;
-    padding: 20px 80px;
+    padding: 10px 40px;
     border: None;
     background: var(--tg-theme-button-color);
     border-radius: 10px;
     color: var(--tg-theme-button-text-color);
     text-transform: uppercase;
     font-weight: 700;
-    text-align: center;
+    text-align: right;
     }
     
