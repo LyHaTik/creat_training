@@ -23,3 +23,12 @@ create_tr.addEventListener("click", () => {
 		tg.sendData(JSON.stringify(data));
 		tg.close()
 	});
+
+var c = document.querySelector('#shest0');
+c.onclick = function() {
+ if (c.checked) {
+  alert( 'чекбокс включён' );
+ } else {
+  alert( 'чекбокс выключён' );
+ }
+}
