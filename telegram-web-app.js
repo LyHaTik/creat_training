@@ -1,6 +1,6 @@
 let tg = window.Telegram.WebApp;
 let create_tr = document.getElementById("create_tr");
-tg.expand();
+
 create_tr.addEventListener("click", () => {
 	let date_tr = document.getElementById("id_date_tr").value;
 	let time_tr = document.getElementById("id_time_tr").value;
