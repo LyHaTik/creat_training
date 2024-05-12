@@ -10,9 +10,9 @@
 	<h2>Создаем юнита</h2>
 		<div class="inner">
 			<ul><label for="photo">Фото:</label>
-				<input type="file" name="photo" id="id_photo">
-				<p><button onclick="save()" class="btn>Save</button></p>
-				<img id="image1" width="100px" height="100px" />
+				<form enctype="multipart/form-data" method="post">
+   				<p><input type="file" name="f">
+   				<input type="submit" value="Отправить"></p>
 				<script>
     					function save ()  {
         					let f = file1.files[0];
